@@ -46,6 +46,10 @@ module.exports = function( grunt ) {
                             , query: {
                                 sourceMap: false
                                 , presets: ['es2015']
+                                , plugins: [
+                                    'transform-es3-property-literals'
+                                    , 'transform-es3-member-expression-literals'
+                                ]
                                 , compact: false
                             }
                         }

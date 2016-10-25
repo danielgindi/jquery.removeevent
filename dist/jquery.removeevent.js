@@ -65,20 +65,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	if (!_jquery2.default.ui || !_jquery2.default.ui.version) {
+	if (!_jquery2['default'].ui || !_jquery2['default'].ui.version) {
 
-	    _jquery2.default.cleanData = function (orig) {
+	    _jquery2['default'].cleanData = function (orig) {
 	        return function (elems) {
 	            var events, elem, i;
 	            for (i = 0; (elem = elems[i]) != null; i++) {
 	                try {
 
 	                    // Only trigger remove when necessary to save time
-	                    events = _jquery2.default._data(elem, 'events');
+	                    events = _jquery2['default']._data(elem, 'events');
 	                    if (events && events.remove) {
-	                        (0, _jquery2.default)(elem).triggerHandler('remove');
+	                        (0, _jquery2['default'])(elem).triggerHandler('remove');
 	                    }
 
 	                    // Http://bugs.jquery.com/ticket/8235
@@ -86,7 +86,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	            orig(elems);
 	        };
-	    }(_jquery2.default.cleanData);
+	    }(_jquery2['default'].cleanData);
 	}
 
 /***/ },
