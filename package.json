@@ -35,6 +35,6 @@
     "webpack": "^1.13.2"
   },
   "scripts": {
-    "prepublish": "npm i && grunt build"
+    "prepublish": "grunt build"
   }
 }
