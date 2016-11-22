@@ -21,6 +21,9 @@
     }
   ],
   "dependencies": {},
+  "peerDependencies": {
+    "jquery": ">= 1.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
