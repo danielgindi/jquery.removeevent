@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-if (!$.ui || !$.ui.version) {
+if ((!$.ui || !$.ui.version) && !/triggerHandler\([^)]*remove[^)]*\)/.test($.cleanData)) {
 
     $.cleanData = ( function( orig ) {
         return function( elems ) {
