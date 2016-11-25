@@ -1,5 +1,5 @@
 /*!
- * jquery.removeevent 1.0.0
+ * jquery.removeevent 1.0.1
  * git://github.com/danielgindi/jquery.removeevent.git
  */
 
@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	if (!_jquery2['default'].ui || !_jquery2['default'].ui.version) {
+	if ((!_jquery2['default'].ui || !_jquery2['default'].ui.version) && !/triggerHandler\([^)]*remove[^)]*\)/.test(_jquery2['default'].cleanData)) {
 
 	    _jquery2['default'].cleanData = function (orig) {
 	        return function (elems) {
